@@ -21,10 +21,12 @@ public class ProductsController {
 		super();
 		this.productService = productService;
 	}
-
+	
 	@GetMapping("/getall")
 	public List<Product> getAll(){
 		return this.productService.getAll();
 	}
 }
+
+
 
